@@ -15,8 +15,8 @@ function App() {
       <div className="twinkling"></div>
       <div className="row">
         <div className="d-flex flex-column min-vh-100 justify-content-center align-items-center">
-          <div className="hello h3">Hello, world</div>
-          <div className="name h1">I'm Ananya. Nice to meet you.</div>
+          <div className="hello h4">Hello, world</div>
+          <div className="name h2">I'm Ananya. Nice to meet you.</div>
         </div>
       </div>
     </div>
