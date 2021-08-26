@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
+import { Helmet } from 'react-helmet';
+
+const TITLE = 'AX';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Helmet>
+      <title> { TITLE}</title>
+    </Helmet>
+    <div className="Container">
+      <div className="stars"></div>
+      <div className="twinkling"></div>
+      <div className="row">
+        <div className="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+          <div className="hello h3">Hello, world</div>
+          <div className="name h1">I'm Ananya. Nice to meet you.</div>
+        </div>
+      </div>
+    </div>
     </div>
   );
 }
